@@ -15,7 +15,6 @@ This project builds a complete, reproducible data workflow using OpenRCA Telecom
 - `data_workflow.ipynb`: end-to-end data workflow notebook
 - `requirements.txt`: Python dependencies for reproducible execution
 - `module_summary.pdf`: written report with citations
->>>>>>> origin/main
 
 ## Dataset
 - Name: OpenRCA (Telecom telemetry)
@@ -47,7 +46,6 @@ pip freeze > requirements.txt
 
 ## Reflection (Rubric Items)
 ### Bias Awareness
-<<<<<<< HEAD
 Poor cleaning can introduce bias in this dataset because structural nulls are source-driven, not random. For example, columns such as `servicename`, `avg_time`, `num`, and `succee_rate` are about 99.94% null in the 50,000-row subset because those fields come from a narrow portion of the merged schemas; imputing them globally would fabricate values for roughly 49,971 rows. Source imbalance is also large (`metric_node` = 25,703 rows vs `metric_app` = 29 rows), so a model can easily learn source identity artifacts instead of failure behavior. The notebook mitigates this by preserving `metric_source`, limiting imputation to lower-missingness columns, and documenting proxy-label limitations in the AIF360 screening section.
 
 ### Future Integration: ML Workflow Changes
