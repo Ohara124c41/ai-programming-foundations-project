@@ -10,11 +10,6 @@ This project builds a complete, reproducible data workflow using OpenRCA Telecom
 - `data_workflow.ipynb`: end-to-end data workflow notebook
 - `requirements.txt`: Python dependencies for reproducible execution
 - `module_summary.pdf`: written report with citations 
-=======
-## What I Built
-- `data_workflow.ipynb`: end-to-end data workflow notebook
-- `requirements.txt`: Python dependencies for reproducible execution
-- `module_summary.pdf`: written report with citations
 
 ## Dataset
 - Name: OpenRCA (Telecom telemetry)
@@ -56,14 +51,4 @@ Neural-network preparation should explicitly handle distribution shape and schem
 
 ### Future Integration: Agentic Automation Potential
 Agentic automation can operationalize this workflow by continuously validating data contracts, refreshing feature statistics, and detecting drift by source group and time window. For this dataset, agents should flag structural-null shifts, source-volume shifts (for example sudden `metric_app` increase), and changes in tail behavior of `value`. Agents can also automate RCA triage prompts using the cleaned telemetry context, but every action should remain auditable through versioned configs, reproducible environments, and Git-tracked outputs. This keeps automation useful without sacrificing traceability.
-=======
-Poor cleaning can introduce bias by treating source-specific structural missingness as random missingness and by over-imputing sparse fields. This workflow keeps source context (`metric_source`) and explicitly discusses proxy-label bias risks.
 
-### Future Integration: ML Workflow Changes
-Before predictive modeling, this workflow should add source-aware feature selection, leakage checks, and strict time-based train/validation splits.
-
-### Future Integration: Neural Network Preparation
-For neural models, features should be normalized with source-aware schemas, heavy tails should be transformed robustly, and data should be packaged into stable train/validation/test artifacts.
-
-### Future Integration: Agentic Automation Potential
-Agentic pipelines can automate data checks, feature refreshes, drift detection, and RCA triage, but should preserve auditability with versioned configs, commits, and reproducible environment files.
