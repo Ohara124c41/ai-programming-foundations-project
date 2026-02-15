@@ -3,7 +3,6 @@
 ## Project Description
 This project builds a complete, reproducible data workflow using OpenRCA Telecom telemetry data. The notebook covers ingestion, cleaning, exploratory analysis, visualization, and a lightweight fairness-risk screening. The goal is to produce a reusable foundation for later ML/DL/agentic RCA work.
 
-<<<<<<< HEAD
 ## Project Repository
 - https://github.com/Ohara124c41/ai-programming-foundations-project
 
@@ -70,4 +69,3 @@ For neural models, features should be normalized with source-aware schemas, heav
 
 ### Future Integration: Agentic Automation Potential
 Agentic pipelines can automate data checks, feature refreshes, drift detection, and RCA triage, but should preserve auditability with versioned configs, commits, and reproducible environment files.
->>>>>>> origin/main
