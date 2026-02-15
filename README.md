@@ -6,7 +6,7 @@ This project builds a complete, reproducible data workflow using OpenRCA Telecom
 ## What I Built
 - `data_workflow.ipynb`: end-to-end data workflow notebook
 - `requirements.txt`: Python dependencies for reproducible execution
-- `module_summary.pdf`: written report with citations (create from the draft content)
+- `module_summary.pdf`: written report with citations
 
 ## Dataset
 - Name: OpenRCA (Telecom telemetry)
